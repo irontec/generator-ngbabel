@@ -3,6 +3,8 @@
 var yosay = require('yosay');
 var chalk = require('chalk');
 
+var prompts = require('./prompts');
+
 module.exports = function() {
 
   var done = this.async();
@@ -11,13 +13,6 @@ module.exports = function() {
   this.log(yosay(
     'Welcome to the priceless ' + chalk.red('GeneratorSample') + ' generator!'
   ));
-
-  var prompts = [{
-    type: 'confirm',
-    name: 'someOption',
-    message: 'Would you like to enable this option?',
-    default: true
-  }];
 
   this.prompt(prompts, function (props) {
     this.props = props;
