@@ -2,9 +2,14 @@
 
 function writePackageFiles() {
 
-  this.fs.copy(
+  this.fs.copyTpl(
     this.templatePath('project/_package.json'),
-    this.destinationPath('package.json')
+    this.destinationPath('package.json'),
+    {
+      packageName: this.props.projectName.dasherized,
+      packageDescription: this.props.projectDescription,
+      username: this.props.username
+    }
   );
 
 }
@@ -19,6 +24,19 @@ function writeProjectTasks() {
 }
 
 function writeProjectDefaults() {
+
+  this.fs.copyTpl(
+    this.templatePath('project/readme.md'),
+    this.destinationPath('README.md'),
+    {
+      projectName: this.props.projectName.original
+    }
+  );
+
+  this.fs.copy(
+    this.templatePath('project/readme.md'),
+    this.destinationPath('README.md')
+  );
 
   this.fs.copy(
     this.templatePath('project/editorconfig'),

@@ -22,16 +22,22 @@ npm i -g yo
 
 The generated project will require to have installed globally the following modules:
 * Gulp
-* JSPM
 
 ```bash
-npm i -g jspm gulp
+npm i -g gulp
 ```
 
-### Running
+### Generating a project
 
 ```bash
 yo ngbabel
+```
+
+### Serve
+```bash
+gulp
+# or
+npm start
 ```
 
 ## License

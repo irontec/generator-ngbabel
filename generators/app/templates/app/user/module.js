@@ -23,7 +23,7 @@ class UserModule {
             return new UserModule(components);
         }
 
-        this.name = 'myApp.users';
+        this.name = '<%= ngApp %>.users';
         this.components = components;
     }
 

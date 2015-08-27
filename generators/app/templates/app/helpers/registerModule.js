@@ -1,7 +1,5 @@
 'use strict';
 
-function registerModule(module) {
+export default function(module) {
   module.register(this);
-}
-
-export { registerModule };
+};

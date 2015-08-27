@@ -11,14 +11,21 @@ function writeApplicationConfig() {
 
 function writeApplicationFiles() {
 
-  this.fs.copy(
+  this.fs.copyTpl(
     this.templatePath('_index.html'),
-    this.destinationPath('index.html')
+    this.destinationPath('index.html'),
+    {
+      title: this.props.projectName.original,
+      ngApp: this.props.projectName.camelized
+    }
   );
 
-  this.fs.copy(
+  this.fs.copyTpl(
     this.templatePath('app/app.js'),
-    this.destinationPath('app/app.js')
+    this.destinationPath('app/app.js'),
+    {
+      ngApp: this.props.projectName.camelized
+    }
   );
 
   this.fs.copy(
@@ -30,9 +37,12 @@ function writeApplicationFiles() {
 
 function writeUserModule() {
 
-  this.fs.copy(
+  this.fs.copyTpl(
     this.templatePath('app/user/module.js'),
-    this.destinationPath('app/user/module.js')
+    this.destinationPath('app/user/module.js'),
+    {
+      ngApp: this.props.projectName.camelized
+    }
   );
 
   this.fs.copy(

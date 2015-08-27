@@ -1,8 +1,20 @@
 [
   {
-    "type": "confirm",
-    "name": "someOption",
-    "message": "Would you like to enable this option?",
-    "default": true
+    "type": "input",
+    "name": "projectName",
+    "message": "What is your project name?",
+    "default": "My App"
+  },
+  {
+    "type": "input",
+    "name": "projectDescription",
+    "message": "Insert your project description (Optional)",
+    "default": null
+  },
+  {
+    "type": "input",
+    "name": "username",
+    "message": "What is your Github Username? (Optional)",
+    "default": null
   }
 ]
