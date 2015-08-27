@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Angular Babel</title>
+    <script type="text/javascript" src="jspm_packages/system.js"></script>
+    <script type="text/javascript" src="config.js"></script>
+    <script type="text/javascript">
+        System.import('./app/app');
+    </script>
+</head>
+<body ng-app="myApp">
+    Angular + jspm + Babel
+    <div ng-controller="UserController as u">
+        <ul ng-repeat="usr in u.users" ng-if="u.users.length > 0">
+            <li>
+                {{usr.id}}. {{usr.login}}
+                <img ng-src="{{usr.avatar_url}}" />
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

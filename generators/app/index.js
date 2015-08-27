@@ -20,6 +20,7 @@ module.exports = yeoman.generators.Base.extend({
 
   // Install dependencies
   install: function () {
-    this.installDependencies();
+    this.npmInstall();
   }
+
 });

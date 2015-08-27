@@ -11,7 +11,7 @@ module.exports = function() {
 
   // Have Yeoman greet the user.
   this.log(yosay(
-    'Welcome to the priceless ' + chalk.red('GeneratorSample') + ' generator!'
+    'Welcome to the priceless ' + chalk.red('ngbabel (Angular + Babel)') + ' generator!'
   ));
 
   this.prompt(prompts, function (props) {

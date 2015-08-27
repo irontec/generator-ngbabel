@@ -1,10 +1,10 @@
 {
-  "name": "generator-sample",
+  "name": "generator-ngbabel",
   "version": "0.0.0",
-  "description": "Yeoman generator",
+  "description": "Yeoman generator for AngularJS + Babel projects",
   "license": "MIT",
   "main": "app/index.js",
-  "repository": "aitorllj93/generator-sample",
+  "repository": "aitorllj93/generator-ngbabel",
   "author": {
     "name": "Aitor",
     "email": "aitorllj93@gmail.com",
