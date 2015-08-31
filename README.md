@@ -1,7 +1,7 @@
 # generator-ngbabel
 > [Yeoman](http://yeoman.io) generator
 
-JSPM + Babel + AngularJS + Gulp generator
+[JSPM](http://jspm.io/) + [Babel](https://babeljs.io) + [AngularJS](https://angularjs.org/) + [Gulp](http://gulpjs.com/) generator
 
 ### Requirements
 * In order to run the generator we need to install yo and generator-ngbabel
