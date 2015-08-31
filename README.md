@@ -1,30 +1,14 @@
 # generator-ngbabel
 > [Yeoman](http://yeoman.io) generator
 
-
-## Getting Started
-
-### What is Yeoman?
-
-Trick question. It's not a thing. It's this guy:
-
-![](http://i.imgur.com/JHaAlBJ.png)
-
-Basically, he wears a top hat, lives in your computer, and waits for you to tell him what kind of application you wish to create.
-
-Not every new computer comes with a Yeoman pre-installed. He lives in the [npm](https://npmjs.org) package repository. You only have to ask for him once, then he packs up and moves into your hard drive. *Make sure you clean up, he likes new and shiny things.*
-
-```bash
-npm i -g yo
-```
+JSPM + Babel + AngularJS + Gulp generator
 
 ### Requirements
-
-The generated project will require to have installed globally the following modules:
-* Gulp
+* In order to run the generator we need to install yo and generator-ngbabel
+* The generated project will require Gulp to perform some tasks
 
 ```bash
-npm i -g gulp
+npm i -g gulp yo generator-ngbabel
 ```
 
 ### Generating a project

@@ -1,10 +1,10 @@
 {
   "name": "generator-ngbabel",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Yeoman generator for AngularJS + Babel projects",
   "license": "MIT",
   "main": "app/index.js",
-  "repository": "aitorllj93/generator-ngbabel",
+  "repository": "irontec/generator-ngbabel",
   "author": {
     "name": "Aitor",
     "email": "aitorllj93@gmail.com",
@@ -17,7 +17,12 @@
     "generators"
   ],
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator",
+    "angularjs",
+    "babel",
+    "es6",
+    "gulp",
+    "jspm"
   ],
   "dependencies": {
     "chalk": "^1.0.0",
